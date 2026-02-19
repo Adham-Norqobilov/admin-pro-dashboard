@@ -151,8 +151,8 @@ onMounted(() => {
             class="relative w-16 h-8 rounded-full bg-slate-800 border border-slate-700 p-1 transition-all duration-500">
             <div class="h-full aspect-square rounded-full transition-all duration-200 flex items-center justify-center shadow-lg"
               :class="uiStore.isDark ? 'ml-8 bg-emerald-500' : 'ml-0 bg-slate-500'">
-              <Sun v-if="uiStore.isDark" :size="12" class="text-white" />
-              <Moon v-else :size="12" class="text-white" />
+              <Moon v-if="uiStore.isDark" :size="12" class="text-white" />
+              <Sun v-else :size="12" class="text-white" />
             </div>
           </button>
         </div>
