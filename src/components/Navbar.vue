@@ -52,9 +52,9 @@ const toggleNotifications = () => {
             <button @click="uiStore.toggleTheme"
                 class="p-2 lg:p-3 text-slate-400 hover:bg-slate-800 rounded-2xl transition-all group active:scale-90 shrink-0">
                 <component 
-                :is="uiStore.isDark ? Moon : Sun"
+                :is="uiStore.isDark ? Sun : Moon"
                 :size="24"
-                :class="uiStore.isDark ? 'text-blue-400' : 'text-yellow-400'"/>
+                :class="uiStore.isDark ? 'text-yellow-400' : 'text-blue-400'"/>
             </button>
 
             <div class="relative shrink-0">
